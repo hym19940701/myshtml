@@ -39,7 +39,8 @@ ul{
 }
 .main-navigation .dropdownmenus{
   width:100px;
-  height:200px;
+  height:0px;
+  overflow: hidden;
   margin-top: -1px;
   background-color: black;
 }

@@ -1,6 +1,6 @@
-/**{*/
-  /*background-color: rgba(0,0,0,.1);*/
-/*}*/
+*{
+  background-color: rgba(0,0,0,.1);
+}
 ul{
   list-style: none;
   padding: 0;
@@ -170,6 +170,9 @@ a{
 .index-box .title-box ul li a:hover{
   color: #52e2c0;
 }
+.index-box .title-box ul li:last-child a{
+  color: #52e2c0;
+}
 .index-box .line{
   width:100%;
   height:3px;
@@ -181,4 +184,9 @@ a{
   width:100%;
   height:398px;
   padding-top: 17px;
+}
+.content-wrapper .content-box .swiper-container{
+  width:470px;
+  height:323px;
+  float: left;
 }

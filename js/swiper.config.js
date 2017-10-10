@@ -5,7 +5,7 @@
 var mySwiper = new Swiper ('.swiper-container', {
   direction: 'horizontal',
   loop: true,
-  autoplay: 1000,
+  autoplay: 3000,
 
   // 如果需要分页器
   pagination: '.swiper-pagination',

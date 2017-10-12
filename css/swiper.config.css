@@ -1,7 +1,11 @@
 .swiper-scrollbar{
   display: none;
 }
-
+.content-wrapper .content-box .swiper-container{
+  width:470px;
+  height:323px;
+  float: left;
+}
 .swiper-button-prev,.swiper-button-next{
   height:25px;
   color: white;
@@ -12,5 +16,21 @@
 .swiper-button-prev:hover{
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%2352e2c0'%2F%3E%3C%2Fsvg%3E");
 }
+/*重置banner区域分页器的默认样式*/
+.banner .auto-box .banner-title .swiper-pagination-bullet{
+  width:100%;
+  height: 41px;
+  display: list-item;
+  border-radius: 0;
+  background: rgba(0,0,0,.6);
+  opacity: 1;
+}
+.banner .auto-box .banner-title .swiper-pagination-bullet a:hover{
+  text-decoration: none;
+}
+.banner .auto-box .banner-title .swiper-pagination-bullet-active a{
+  color: #52e2c0;
+}
+
 
 

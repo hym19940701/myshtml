@@ -12,6 +12,7 @@ var swiper1 = new Swiper ('#swiper2', {
   prevButton: '.swiper-button-prev',
   // 如果需要滚动条
   scrollbar: '.swiper-scrollbar',
+  autoplayDisableOnInteraction : false
 })
 // banner区域轮播图
 var imgarr=[

@@ -27,14 +27,24 @@ var imgarr=[
   '快到飞起的韩团二倍速舞蹈',
   '生日快乐，我的祖国！'
 ];
+//自定义分页器样式
 window.onload=function(){
+  addimgarr()
+};
+window.onresize=function(){
+  location.reload();
+  window.onload=function(){
+    addimgarr()
+  }
+};
+function addimgarr() {
   var imgTitles=document.getElementsByClassName('swiper-pagination-bullet');
-  for(i in imgTitles){
+  for( var i in imgTitles){
     var a=document.createElement('a');
     a.innerHTML=imgarr[i];
     imgTitles[i].appendChild(a);
   }
-};
+}
 
 
 var swiper2 = new Swiper ('#swiper1',{

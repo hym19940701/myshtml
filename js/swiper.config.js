@@ -31,17 +31,15 @@ var imgarr=[
 window.onload=function(){
   addimgarr()
 };
-window.onresize=function(){
-  location.reload();
-  window.onload=function(){
-    addimgarr()
-  }
+window.onresize=function(){//解决改变窗口大小后动态添加标签消失的问题
+  setTimeout(addimgarr,10)
 };
-function addimgarr() {
+function addimgarr() {//自定义分页器,动态添加标签
   var imgTitles=document.getElementsByClassName('swiper-pagination-bullet');
   for( var i in imgTitles){
     var a=document.createElement('a');
     a.innerHTML=imgarr[i];
+    imgTitles[i].getElementsByTagName('a')[0]&&imgTitles[i].removeChild('a');
     imgTitles[i].appendChild(a);
   }
 }

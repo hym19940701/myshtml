@@ -283,3 +283,17 @@ a:hover{
 .main-footer .footer-copy a{
   color: #999;
 }
+.return-top{
+  position: fixed;
+  display:none;
+  *display:inline;
+  *zoom:1;
+  right: 20px;
+  bottom: 100px;
+}
+.return-top .return-icon{
+  /*position: absolute;*/
+  display: block;
+  right:0;
+  bottom: 0;
+}

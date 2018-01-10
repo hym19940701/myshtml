@@ -37,12 +37,13 @@ var b = channel.getElementsByTagName('b')[0];
 channel.onmouseover = function () {
   b.className = '';
   b.className = 'active-triangle';
-  animat(dropdownmenus, 'height', 200, 5)
+  // animat(dropdownmenus, 'height', 200, 5)
+  dropdownmenus.style.height='200px'
 };
 channel.onmouseout = function () {
   b.className = '';
   b.className = 'default-triangle';
-  clearInterval(dropdownmenus.timer);
+  // clearInterval(dropdownmenus.timer);
   dropdownmenus.style.height = 0
 };
 //返回浏览器顶部按钮
